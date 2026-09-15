@@ -1,15 +1,16 @@
 # HR Data Analytics Lab
 
-> Hands-on HR Data Analytics labs exploring people and organizations through data using R.
+Hands-on HR Data Analytics labs exploring people and organizations through data using R.
 
 This repository contains hands-on labs and exercises from the **HR Data Analytics and Applications** course.
 
 ## 📚 Course
 
 **HR Data Analytics and Applications**
+
 The labs focus on analyzing HR data using R and exploring how data can support better decisions about **people and organizations**.
 
-## 🎯 Learning Objectives
+### Learning Objectives
 
 - Understand fundamental concepts of HR Data Analytics.
 - Analyze and visualize HR data using R.
@@ -17,12 +18,12 @@ The labs focus on analyzing HR data using R and exploring how data can support b
 - Apply statistical methods to HR-related questions.
 - Translate analytical results into actionable insights.
 
-## 🧪 Labs
+### Labs
 
 The labs follow a practical analytics process:
 **Question → Data → Analysis → Insight → Decision**
 
-## 🛠 Environment
+### Environment
 
 - R 4.6.1
 - RStudio 2026.09.0 Build 174
