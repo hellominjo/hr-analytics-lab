@@ -12,6 +12,7 @@
 - **분석 방법:** 기술통계, Welch's t-test, Cohen's d
 - **주요 결과:** 프라이버시침해불안에서만 유의한 차이 확인(`p = .0317`, `Cohen's d = -0.242`)
 
+<br />
 
 #### Lab 02. Employee Performance Prediction | 직원 성과 예측
 
