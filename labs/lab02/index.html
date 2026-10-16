@@ -649,6 +649,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 02 - Performance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -665,6 +683,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview | 분석 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Dataset | 데이터셋
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Methodology | 분석 방법
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-generative-ai-prompts-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Generative AI Prompts | 생성형 AI 활용
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Results | 분석 결과
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-hr-insights-hr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. HR Insights | HR 관점의 시사점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-analysis-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Analysis Workflow | 분석 과정
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -698,6 +812,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview | 분석 개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Dataset | 데이터셋
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-methodology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Methodology | 분석 방법
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-generative-ai-prompts-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Generative AI Prompts | 생성형 AI 활용
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Results | 분석 결과
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-hr-insights-hr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. HR Insights | HR 관점의 시사점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-analysis-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Analysis Workflow | 분석 과정
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -714,6 +913,73 @@
 
 
 <h1 id="lab-02-employee-performance-prediction">Lab 02. Employee Performance Prediction</h1>
+<p><strong>HR 특성을 활용한 이항 로지스틱 회귀분석 및 고성과 확률 예측</strong></p>
+<blockquote>
+<p><strong>Tools:</strong> R · RStudio · Excel<br />
+<strong>Methods:</strong> 이항 로지스틱 회귀분석 · 오즈비(OR) · GVIF · 모형 적합도 검정 · 분류 성능 평가<br />
+<strong>Keywords:</strong> HR Analytics · Employee Performance · Logistic Regression · Classification</p>
+</blockquote>
+<h2 id="1-overview">1. Overview | 분석 개요</h2>
+<p>직원의 HR 특성과 고성과 여부의 관계를 분석하고, 고성과 확률을 예측하는 모형을 구축합니다. 독립변수는 <strong>결혼여부</strong>, <strong>근무시간</strong>, <strong>근태사고율</strong>, <strong>나이</strong>, <strong>리더역량</strong>, <strong>성별</strong>, <strong>연봉</strong>, <strong>연차</strong>, <strong>조직적합도</strong>, <strong>직무만족도</strong>, <strong>학력</strong>입니다.</p>
+<p><strong>연구 질문:</strong> 직원의 HR 특성은 고성과 여부와 어떤 관계가 있으며, 이를 활용하여 고성과자가 될 확률을 예측할 수 있는가?</p>
+<h2 id="2-dataset">2. Dataset | 데이터셋</h2>
+<ul>
+<li>데이터: <code>ch3_performance.xlsx</code>(모형 구축), <code>test.xlsx</code>(신규 직원 예측·검증)</li>
+<li>출처: HR 데이터애널리틱스 수업 분석 데이터</li>
+<li>종속변수: 성과(1 = 고성과자, 0 = 저성과자)</li>
+<li>전처리: 결혼여부·성별·학력을 범주형으로 변환(기준범주: 결혼여부 M, 성별 F, 학력 1), 수치형 변수는 원본 값 사용</li>
+</ul>
+<h2 id="3-methodology">3. Methodology | 분석 방법</h2>
+<ol>
+<li><code>glm(family = binomial)</code>으로 이항 로지스틱 회귀모형 구축</li>
+<li>회귀계수에 지수함수를 적용해 오즈비(OR)와 95% 신뢰구간 산출</li>
+<li>GVIF로 다중공선성 진단</li>
+<li>우도비 카이제곱 검정과 AIC로 모형 적합도 확인</li>
+<li>예측확률 0.5를 기준으로 분류하고 혼동행렬로 정확도·민감도·특이도 평가</li>
+<li>신규 직원 5명의 고성과 확률 예측 후 실제 성과와 비교</li>
+</ol>
+<h2 id="4-generative-ai-prompts-ai">4. Generative AI Prompts | 생성형 AI 활용</h2>
+<p>R 코드 작성, 로지스틱 회귀분석과 오즈비 산출, 분류 성능 평가, 신규 직원 예측 결과의 Excel 저장 절차를 구성하는 데 생성형 AI를 활용한 실습입니다. 0/1 코딩과 기준범주 설정, 혼동행렬의 실제값·예측값 방향 등은 R 출력값을 기준으로 직접 확인해야 합니다.</p>
+<h2 id="5-results">5. Results | 분석 결과</h2>
+<table>
+<thead>
+<tr>
+<th>평가 지표</th>
+<th style="text-align: right;">결과</th>
+<th>해석</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>정확도(Accuracy)</td>
+<td style="text-align: right;">72.4%</td>
+<td>전체 직원의 72.4%를 정확하게 분류</td>
+</tr>
+<tr>
+<td>민감도(Sensitivity)</td>
+<td style="text-align: right;">54.7%</td>
+<td>실제 고성과자의 54.7%를 식별</td>
+</tr>
+<tr>
+<td><strong>특이도(Specificity)</strong></td>
+<td style="text-align: right;"><strong>84.1%</strong></td>
+<td><strong>실제 저성과자의 84.1%를 식별</strong></td>
+</tr>
+</tbody>
+</table>
+<p>저성과자 식별 성능에 비해 고성과자 식별 성능이 상대적으로 낮았습니다. 신규 직원 5명 중 4명의 성과를 정확하게 예측했으며, 실제 고성과자인 직원 3은 예측확률 0.343으로 저성과자로 분류되었습니다.</p>
+<h2 id="6-hr-insights-hr">6. HR Insights | HR 관점의 시사점</h2>
+<ul>
+<li>HR 특성으로 고성과 확률을 추정할 수 있지만, 고성과자 탐지가 목적이라면 분류 기준값 조정이 필요합니다.</li>
+<li>정확도 하나보다 민감도·특이도를 함께 보고 모형의 활용 가능성을 판단해야 합니다.</li>
+<li>예측 결과는 인재 육성 및 성과관리의 보조자료로만 활용하고, 데이터 편향·개인정보 보호·평가 공정성을 함께 고려해야 합니다.</li>
+<li>변수 간 관계는 인과관계가 아니며, 신규 직원 검증 사례가 5명으로 적어 일반화에 주의가 필요합니다.</li>
+</ul>
+<h2 id="7-analysis-workflow">7. Analysis Workflow | 분석 과정</h2>
+<p><strong>Excel 불러오기 → 변수 설정 → 로지스틱 회귀 → 오즈비 → 다중공선성·적합도 검정 → 분류 성능 평가 → 신규 직원 예측 → 결과 저장</strong></p>
+<p>이 페이지는 웹 공개용 요약 문서입니다. 원본 R 스크립트와 결과 Excel은 프로젝트의 Lab 02 디렉터리에서 관리합니다.</p>
+<hr />
+<p><a href="../../glossary/data/">데이터 용어사전</a> · <a href="../../">홈으로</a></p>
 
 
 
