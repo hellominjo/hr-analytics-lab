@@ -1,0 +1,30 @@
+/* ======================================================================
+   MKDocs Colors (mkdocs.yml - primary/accent: custom)
+   ====================================================================== */
+
+/* 헤더 · 메뉴 탭 영역, 링크 색 */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #038f94;
+  --md-primary-fg-color--light: #5c6bc0;
+  --md-primary-fg-color--dark: #303f9f;
+}
+
+/* 링크 · 버튼 hover 강조색 */
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: #526cfe;
+  --md-accent-fg-color--transparent: #526cfe1a;
+}
+
+/* 좌측 상단 로고 아이콘 색 */
+.md-header__button.md-logo svg {
+  fill: #ffffff;
+}
+
+/* 헤더 사이트 이름 옆 작은 서브 텍스트 */
+.md-header__topic:first-child .md-ellipsis::after {
+  content: "by hellominjo";
+  margin-left: 0.5em;
+  font-size: 0.65em;
+  font-weight: 400;
+  opacity: 0.9;
+}
