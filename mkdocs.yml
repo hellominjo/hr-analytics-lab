@@ -43,6 +43,6 @@ nav:
       - Methods: glossary/methods.md
       - HR Context: glossary/hr-context.md
   - Analysis Labs:
+      - labs/index.md
       - Lab 01 - AI Anxiety: labs/lab01.md
       - Lab 02 - Performance: labs/lab02.md
-
