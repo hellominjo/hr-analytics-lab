@@ -1,11 +1,12 @@
 ## Lab 01. AI Anxiety Analysis
 **AI 불안 요인에 따른 연령대별 차이 분석**
+<br />
 
 > **Tools :** R · RStudio · Excel  
 > **Methods :** 기술통계 · Welch's t-검정 · Cohen's d 효과크기 분석  
 > **Keywords :** HR Analytics · AI Anxiety · Age Groups · Welch's t-test · Cohen's d
 
----
+<br />
 
 ## 1. Overview | 분석 개요
 
@@ -62,22 +63,10 @@
 
 ### 2.3 데이터 전처리
 
-**Step 1. 데이터 불러오기**
-
-- `readxl::read_excel()`을 이용하여 Excel 데이터를 R 환경으로 불러오기
-
-**Step 2. AI 불안 척도 생성**
-
-- 각 AI 불안 하위요인에 해당하는 3개 문항의 평균값을 계산하여 분석 변수 생성
-
-**Step 3. 연령집단 구분**
-
-- 비고령 집단: 50세 미만
-- 고령 집단: 50세 이상
-
-**Step 4. 분석 데이터 구성**
-
-- AI 불안 척도와 연령집단 변수를 추가하여 통계 분석에 활용
+- **Step 1. 데이터 불러오기** : `readxl::read_excel()`을 이용하여 Excel 데이터를 R 환경으로 불러오기
+- **Step 2. AI 불안 척도 생성** : 각 AI 불안 하위요인에 해당하는 3개 문항의 평균값을 계산하여 분석 변수 생성
+- **Step 3. 연령집단 구분** : 비고령 집단 (50세 미만) / 고령 집단 (50세 이상)
+- **Step 4. 분석 데이터 구성**: AI 불안 척도와 연령집단 변수를 추가하여 통계 분석에 활용
 
 <br />
 
@@ -107,7 +96,7 @@
 | Standard Deviation (SD) | 집단별 표준편차 |
 | Mean Difference | 비고령 평균 − 고령 평균 |
 
-### 3.3 Welch's Independent Samples t-test
+### 3.3 Welch's 독립표본 t-검정
 
 - 두 독립된 연령집단 간 AI 불안 평균 차이를 검증하기 위해 Welch의 독립표본 t-검정을 사용
 - Welch's t-test는 두 집단의 분산이 동일하다는 가정을 요구하지 않음
@@ -148,7 +137,7 @@ t.test(young, old, var.equal = FALSE)
 
 효과크기의 부호는 집단 간 평균 차이의 방향을 나타냄
 
-
+<br />
 
 ## 4. Generative AI Prompts | 생성형 AI 활용
 
@@ -183,7 +172,7 @@ AI가 작성하거나 제안한 분석 코드는 다음 기준으로 검증
 - p-value 및 신뢰구간 해석의 정확성
 - Cohen's d 계산 및 효과크기 해석 확인
 
-
+<Br />
 
 ## 5. Results | 분석 결과
 
@@ -218,6 +207,7 @@ Welch's t-test 분석 결과, 세 가지 AI 불안 요인 중 **프라이버시�
 - 평균 차이는 -0.299로 비고령 집단을 기준으로 계산한 값임
 - Cohen's d = -0.242로 집단 간 차이의 효과크기는 작은 수준임
 
+<Br />
 
 ## 6. HR Insights | HR 관점의 시사점
 
@@ -247,7 +237,7 @@ Welch's t-test 분석 결과, 세 가지 AI 불안 요인 중 **프라이버시�
 - 표본의 대표성 및 데이터 수집 조건은 추가 확인이 필요함
 - 효과크기가 작으므로 통계적 유의성만으로 실무적 중요성을 단정하기 어려움
 
-
+<br />
 
 ## 7. Analysis Workflow | 분석 과정
 
