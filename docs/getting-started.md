@@ -1,6 +1,6 @@
 # Getting Started
 
-피플 애널리틱스(People Analytics)의 기본 개념과 데이터 분석 방법을 이해하고, R과 RStudio를 활용해 HR 데이터를 탐색하는 첫 단계를 안내합니다.
+피플 애널리틱스(People Analytics)의 기본 개념과 데이터 분석 방법 이해 및 R과 RStudio를 활용해 HR 데이터 분석방법을 설명합니다.
 
 > **Domain:** People Analytics · Human Resources  
 > **Tools:** R · RStudio · Excel  
