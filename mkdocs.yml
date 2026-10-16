@@ -1,0 +1,48 @@
+site_name: HR Data Analytics Lab
+site_description: People Analytics & Statistical Methods
+site_url: https://hellominjo.github.io/hr-analytics-lab/
+
+theme:
+  name: material
+  language: ko
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Dark Mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Light Mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Glossary:
+      - Data: glossary/data.md
+      - Methods: glossary/methods.md
+      - HR Context: glossary/hr-context.md
+  - Analysis Labs:
+      - Lab 01 - AI Anxiety: labs/lab01.md
+      - Lab 02 - Performance: labs/lab02.md
+
