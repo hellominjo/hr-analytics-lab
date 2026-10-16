@@ -1,6 +1,8 @@
-## HR Topics | 분석 주제
+# HR Topics | 분석 실습
 
-다양한 HR 맥락에서의 데이터 분석 방법 및 실제 사례에 적용하는 실습
+다양한 HR 맥락에서의 데이터 분석 방법 및 실제 사례 실습
+
+---
 
 #### Lab 01. AI Anxiety Analysis | AI 불안 요인과 연령집단 차이 
 
@@ -11,7 +13,7 @@
 - **주요 결과:** 프라이버시침해불안에서만 유의한 차이 확인(`p = .0317`, `Cohen's d = -0.242`)
 
 
-#### Lab 02. Employee Performance Prediction | 직원 고성과 확률 예측
+#### Lab 02. Employee Performance Prediction | 직원 성과 예측
 
 - **연구 질문:** HR 특성 중 어떤 변수가 고성과 가능성과 관련되며, 직원의 고성과 확률을 추정할 수 있는가?
 - **분석 데이터:** `ch3_performance.xlsx`(모형 구축), `test.xlsx`(성과 예측·검증)
